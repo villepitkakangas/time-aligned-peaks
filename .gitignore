@@ -1,0 +1,19 @@
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# venv
+.venv/
+
+# Outputs
+*.png
+peaks_report.csv
+peaks_matrix.csv

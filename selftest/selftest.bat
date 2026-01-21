@@ -1,0 +1,3 @@
+python tap_selftest.py --primary examples/primary.csv --secondary examples/secondary.xlsx --secondary-sheet Sheet1 --secondary-date-format "%%Y-%%m" --title "TAP Self-Test" --out-dir tap_selftest_output_final
+
+python tap_selftest.py --primary examples/primary1.csv --secondary examples/secondary1.xlsx --secondary-sheet Sheet1 --secondary-date-format "%%Y-%%m" --title "TAP Self-Test" --out-dir tap_selftest_output_final1

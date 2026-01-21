@@ -1,0 +1,38 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "time-aligned-peaks"
+version = "0.3.0"
+description = "Line plots with a synchronized per-timestamp peak/overlap timeline"
+authors = [{name = "Ville Pitkakangas", email = "ville.pitkakangas@centria.fi"}]
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE-MIT"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Visualization"
+]
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=2.0",
+    "matplotlib>=3.5",
+    "openpyxl>=3.1"
+]
+
+[project.scripts]
+time-aligned-peaks = "time_aligned_peaks.cli:main"
+
+[tool.coverage.run]
+source = ["time_aligned_peaks", "time_aligned_peaks_final.py"]
+
+[tool.setuptools.packages.find]
+exclude = ["selftest", "tests"]

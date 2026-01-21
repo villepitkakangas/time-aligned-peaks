@@ -1,0 +1,34 @@
+{
+  "lineplot": {
+    "elapsed_seconds": 21.11614150000969,
+    "n_clicks": 3,
+    "n_snapped_unique": 3,
+    "metrics": {
+      "true_positives": 3,
+      "false_positives": 0,
+      "false_negatives": 1,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571,
+      "jaccard": 0.75,
+      "user_count": 3,
+      "gt_count": 4
+    }
+  },
+  "tap": {
+    "elapsed_seconds": 7.590765299974009,
+    "n_clicks": 4,
+    "n_snapped_unique": 4,
+    "metrics": {
+      "true_positives": 4,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "jaccard": 1.0,
+      "user_count": 4,
+      "gt_count": 4
+    }
+  }
+}

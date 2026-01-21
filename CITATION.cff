@@ -1,0 +1,12 @@
+
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Time-Aligned Peaks (TAP)"
+version: "0.3.0"
+authors:
+  - family-names: Pitkäkangas
+    given-names: Ville
+    affiliation: Centria University of Applied Sciences
+date-released: 2026-01-21
+repository-code: "https://github.com/villepitkakangas/time-aligned-peaks"
+license: "MIT"
