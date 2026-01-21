@@ -141,7 +141,7 @@ Plot basics
 - `--legend-secondary-prefix STR` — Legend prefix for secondary (default: "Secondary").
 
 Figure resolution
-- `--dpi` INT — Controls the resolution of raster output formats (PNG/JPG). It is ignored for vector formats (SVG/PDF).
+- `--dpi INT` — Controls the resolution of raster output formats (PNG/JPG). It is ignored for vector formats (SVG/PDF).
 
 Overlap markers (main plot)
 - `--overlap-style {none,lineplot,sync-timeline}` — Marker style in the **top** line plot (default: lineplot).
