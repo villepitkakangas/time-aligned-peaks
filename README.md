@@ -2,7 +2,7 @@
 # Time-Aligned Peaks (TAP)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![DOI](https://zenodo.org/badge/DOI/placeholder.svg)](https://zenodo.org/placeholder)
+[![DOI](https://zenodo.org/badge/1139156471.svg)](https://doi.org/10.5281/zenodo.18328885)
 
 ## Table of Contents
 - Statement of Need
@@ -273,7 +273,7 @@ If you use Time-Aligned Peaks (TAP) in academic work, please cite:
 Ville Pitkäkangas, *Time-Aligned Peaks (TAP)*, software package, 2026.  
 See `CITATION.cff` for the preferred citation.
 
-A DOI will be added here once available.
+DOI: 10.5281/zenodo.18328885
 
 ## Provenance & Relationship to Previous Work
 Time‑Aligned Peaks (TAP) is an independent software implementation created by the author. TAP generalises and extends a static visualisation concept (“piikkivisualisointi”) developed by the author within the LYHTY project at Centria University of Applied Sciences (2021).
