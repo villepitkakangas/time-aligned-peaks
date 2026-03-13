@@ -2,7 +2,7 @@
 # Time-Aligned Peaks (TAP)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![DOI](https://zenodo.org/badge/1139156471.svg)](https://doi.org/10.5281/zenodo.18328886)
+[![DOI](https://zenodo.org/badge/1139156471.svg)](https://doi.org/10.5281/zenodo.18328885)
 
 ## Table of Contents
 - Statement of Need
