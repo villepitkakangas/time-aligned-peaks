@@ -3,7 +3,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "Time-Aligned Peaks (TAP)"
 version: "0.3.1"
-doi: 10.5281/zenodo.18328886
+doi: 10.5281/zenodo.18328885
 authors:
   - family-names: Pitkäkangas
     given-names: Ville
