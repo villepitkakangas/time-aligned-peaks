@@ -11,6 +11,8 @@
 - Quick Start
 - Command-line Usage
 - Command-line Arguments
+- Command-line Examples
+- Exit Status
 - Programmatic Usage
 - Using the Makefile
 - Testing
@@ -182,26 +184,56 @@ Outputs
 Logging
 - `--log-level {DEBUG,INFO,WARNING,ERROR,CRITICAL}` — Default: INFO.
 
+## Command-line Examples
+Running all three examples produces example outputs using `default`, `inverse1` and `inverse2` overlap marker colour modes. Note that TAP assumes the output folder to exist.
+```bash
+# "default" mode
+python -m time_aligned_peaks.cli --primary selftest/examples/primary1.csv --secondary selftest/examples/secondary1.xlsx --secondary-sheet "Sheet1" --secondary-date-format "%Y-%m" --timeline-overlap-mode default --save-figure selftest/examples/demo_default.png --output-peak-matrix selftest/examples/demo_output_peak_matrix_default.csv --output-peaks selftest/examples/demo_output_peaks_default.csv
+
+# "inverse1" mode
+python -m time_aligned_peaks.cli --primary selftest/examples/primary1.csv --secondary selftest/examples/secondary1.xlsx --secondary-sheet "Sheet1" --secondary-date-format "%Y-%m" --timeline-overlap-mode inverse1 --save-figure selftest/examples/demo_inverse1.png --output-peak-matrix selftest/examples/demo_output_peak_matrix_inverse1.csv --output-peaks selftest/examples/demo_output_peaks_inverse1.csv
+
+# "inverse2" mode
+python -m time_aligned_peaks.cli --primary selftest/examples/primary1.csv --secondary selftest/examples/secondary1.xlsx --secondary-sheet "Sheet1" --secondary-date-format "%Y-%m" --timeline-overlap-mode inverse2 --save-figure selftest/examples/demo_inverse2.png --output-peak-matrix selftest/examples/demo_output_peak_matrix_inverse2.csv --output-peaks selftest/examples/demo_output_peaks_inverse2.csv
+```
+
 ## Exit Status
 The script raises errors (non‑zero exit) on invalid options (e.g., name count mismatch in --primary-cols / --secondary-cols) or unsupported file types.
 
 ## Programmatic Usage
+
+TAP's internal functions can be imported from the corresponding submodules.  
+For example, peak detection and binary-matrix construction are available from
+`time_aligned_peaks.peaks`:
+
 ```python
 import pandas as pd
-from time_aligned_peaks import find_peaks_per_row, peaks_to_binary_matrix
+from time_aligned_peaks.peaks import find_peaks_per_row, peaks_to_binary_matrix
 
 # Build or load aligned DataFrames primary_df, secondary_df and an index
 unified_index = primary_df.index.union(secondary_df.index)
 primary_aligned = primary_df.reindex(unified_index)
 secondary_aligned = secondary_df.reindex(unified_index)
 
+# Peak detection
 p_peaks = find_peaks_per_row(primary_aligned)
 s_peaks = find_peaks_per_row(secondary_aligned)
 
+# Convert to a binary peak matrix
 matrix_df = peaks_to_binary_matrix(
-    unified_index, p_peaks, s_peaks,
-    list(primary_aligned.columns), list(secondary_aligned.columns), include_overlap=True
+    unified_index,
+    p_peaks,
+    s_peaks,
+    list(primary_aligned.columns),
+    list(secondary_aligned.columns),
+    include_overlap=True,
 )
+```
+
+For a complete programmatic example reproducing the full dual‑panel TAP
+visualisation, see:
+```bash
+examples/module_usage_example.py
 ```
 
 ## Using the Makefile
