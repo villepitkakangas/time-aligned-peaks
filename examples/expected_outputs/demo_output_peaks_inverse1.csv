@@ -1,0 +1,19 @@
+row,time,secondary_peak_columns,primary_peak_columns,overlap
+0,2024-01-01,,,False
+1,2024-02-01,,,False
+2,2024-03-01,S1,,False
+3,2024-04-01,,P1,False
+4,2024-05-01,,,False
+5,2024-06-01,"S1, S2","P1, P2",True
+6,2024-07-01,,,False
+7,2024-08-01,,,False
+8,2024-09-01,,,False
+9,2024-10-01,,,False
+10,2024-11-01,"S1, S2","P1, P2",True
+11,2024-12-01,,,False
+12,2025-01-01,S1,P2,True
+13,2025-02-01,,,False
+14,2025-03-01,"S1, S2","P1, P2",True
+15,2025-04-01,,,False
+16,2025-05-01,,,False
+17,2025-06-01,,,False
