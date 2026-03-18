@@ -188,13 +188,13 @@ Logging
 Running all three examples produces example outputs using `default`, `inverse1` and `inverse2` overlap marker colour modes. Note that TAP assumes the output folder to exist. All commands below assume that TAP has been installed with `pip install -e .` and that they are run from the repository root.
 ```bash
 # "default" mode
-python -m time_aligned_peaks.cli --primary selftest/examples/primary1.csv --secondary selftest/examples/secondary1.xlsx --secondary-sheet "Sheet1" --secondary-date-format "%Y-%m" --timeline-overlap-mode default --save-figure examples/expected_outputs/demo_default.png --output-peak-matrix examples/expected_outputs/demo_output_peak_matrix_default.csv --output-peaks examples/expected_outputs/demo_output_peaks_default.csv
+python -m time_aligned_peaks.cli --primary selftest/examples/primary1.csv --secondary selftest/examples/secondary1.xlsx --secondary-sheet "Sheet1" --secondary-date-format "%Y-%m" --timeline-overlap-mode default --save-figure examples/expected_outputs/demo_default.png --output-peak-matrix examples/expected_outputs/demo_output_peak_matrix_default.csv --output-peaks examples/expected_outputs/demo_output_peaks_default.csv --dpi 600
 
 # "inverse1" mode
-python -m time_aligned_peaks.cli --primary selftest/examples/primary1.csv --secondary selftest/examples/secondary1.xlsx --secondary-sheet "Sheet1" --secondary-date-format "%Y-%m" --timeline-overlap-mode inverse1 --save-figure examples/expected_outputs/demo_inverse1.png --output-peak-matrix examples/expected_outputs/demo_output_peak_matrix_inverse1.csv --output-peaks examples/expected_outputs/demo_output_peaks_inverse1.csv
+python -m time_aligned_peaks.cli --primary selftest/examples/primary1.csv --secondary selftest/examples/secondary1.xlsx --secondary-sheet "Sheet1" --secondary-date-format "%Y-%m" --timeline-overlap-mode inverse1 --save-figure examples/expected_outputs/demo_inverse1.png --output-peak-matrix examples/expected_outputs/demo_output_peak_matrix_inverse1.csv --output-peaks examples/expected_outputs/demo_output_peaks_inverse1.csv --dpi 600
 
 # "inverse2" mode
-python -m time_aligned_peaks.cli --primary selftest/examples/primary1.csv --secondary selftest/examples/secondary1.xlsx --secondary-sheet "Sheet1" --secondary-date-format "%Y-%m" --timeline-overlap-mode inverse2 --save-figure examples/expected_outputs/demo_inverse2.png --output-peak-matrix examples/expected_outputs/demo_output_peak_matrix_inverse2.csv --output-peaks examples/expected_outputs/demo_output_peaks_inverse2.csv
+python -m time_aligned_peaks.cli --primary selftest/examples/primary1.csv --secondary selftest/examples/secondary1.xlsx --secondary-sheet "Sheet1" --secondary-date-format "%Y-%m" --timeline-overlap-mode inverse2 --save-figure examples/expected_outputs/demo_inverse2.png --output-peak-matrix examples/expected_outputs/demo_output_peak_matrix_inverse2.csv --output-peaks examples/expected_outputs/demo_output_peaks_inverse2.csv --dpi 600
 ```
 
 ## Exit Status
