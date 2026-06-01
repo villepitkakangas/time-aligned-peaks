@@ -3,6 +3,16 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/1139156471.svg)](https://doi.org/10.5281/zenodo.18328885)
+[![DOI](https://img.shields.io/badge/DOI-10.5334/jors.681-blue)](https://doi.org/10.5334/jors.681)
+
+📄 **Published in Journal of Open Research Software:**  
+https://doi.org/10.5334/jors.681
+
+🔗 **Zenodo archive (versioned releases)**  
+https://doi.org/10.5281/zenodo.18328885
+
+📘 **Related project (LYHTY, report in Finnish)**  
+https://www.theseus.fi/bitstream/handle/10024/703277/978-952-7173-61-9.pdf
 
 ## Table of Contents
 - Statement of Need
@@ -300,11 +310,14 @@ See CONTRIBUTION.md for contribution guidelines and CODE_OF_CONDUCT.md for the c
 This software is provided as-is. If you encounter bugs or questions, please open a GitHub Issue. Issues are handled on a best-effort basis.
 
 ## Citation
-If you use Time-Aligned Peaks (TAP) in academic work, please cite:
+If you use Time-Aligned Peaks (TAP) in academic work, please cite:  
 Ville Pitkäkangas, *Time-Aligned Peaks (TAP)*, software package, 2026.  
 See `CITATION.cff` for the preferred citation.
 
 Please cite the software using the Zenodo Concept DOI: 10.5281/zenodo.18328885
+
+Please also cite the published article:  
+Pitkäkangas, V. (2026) ‘Time-Aligned Peaks (TAP): A Tool for Visualising Multi-Series Peak Co-Occurrence’, *Journal of Open Research Software*, 14(1), p. 39. Available at: https://doi.org/10.5334/jors.681.
 
 ## Provenance & Relationship to Previous Work
 Time‑Aligned Peaks (TAP) is an independent software implementation created by the author. TAP generalises and extends a static visualisation concept (“piikkivisualisointi”) developed by the author within the LYHTY project at Centria University of Applied Sciences (2021).
